@@ -2,11 +2,11 @@
 
 # TRENDORIN
 
-### Linux Security · Rust · Open Source
+### Linux Security · C++ · Open Source
 
 <p>
   Building security-focused software close to the Linux system layer.<br>
-  Rust-first engineering, explicit privilege boundaries and inspectable code.
+  C++-first engineering, explicit privilege boundaries and inspectable code.
 </p>
 
 <p>
@@ -26,7 +26,7 @@
   </tr>
   <tr>
     <td align="center" valign="middle">
-      <img src="https://skillicons.dev/icons?i=rust,cpp,py,bash,sqlite&theme=dark" alt="Rust, C++, Python, Bash and SQLite" />
+      <img src="https://skillicons.dev/icons?i=cpp,java,py,bash,sqlite&theme=dark" alt="C++, Java, Python, Bash and SQLite" />
     </td>
     <td align="center" valign="middle">
       <img src="https://skillicons.dev/icons?i=linux,kali,docker,git&theme=dark" alt="Linux, Kali Linux, Docker and Git" />
