@@ -1,39 +1,14 @@
-<div align="center">
+# Hi, I'm Trendon
 
-# TRENDORIN
+I'm a Linux-focused software developer interested in security, system tooling and open-source software.
 
-### Linux Security · C++ · Open Source
+I primarily work with **C++**, **Python** and **Bash**. I prefer local-first applications, explicit privilege boundaries, predictable behavior and code that can be inspected without unnecessary complexity.
 
-<p>
-  Building security-focused software close to the Linux system layer.<br>
-  C++-first engineering, explicit privilege boundaries and inspectable code.
-</p>
+![C++](https://img.shields.io/badge/C++-24292F?style=flat-square\&logo=cplusplus\&logoColor=white)
+![Python](https://img.shields.io/badge/Python-24292F?style=flat-square\&logo=python\&logoColor=white)
+![Bash](https://img.shields.io/badge/Bash-24292F?style=flat-square\&logo=gnubash\&logoColor=white)
+![SQLite](https://img.shields.io/badge/SQLite-24292F?style=flat-square\&logo=sqlite\&logoColor=white)
+![Linux](https://img.shields.io/badge/Linux-24292F?style=flat-square\&logo=linux\&logoColor=white)
+![Docker](https://img.shields.io/badge/Docker-24292F?style=flat-square\&logo=docker\&logoColor=white)
+![Git](https://img.shields.io/badge/Git-24292F?style=flat-square\&logo=git\&logoColor=white)
 
-<p>
-  <a href="https://github.com/Trendorin?tab=repositories"><img src="https://img.shields.io/badge/%20-PROJECTS-30363D?style=for-the-badge&logo=github&logoColor=D0D7DE&labelColor=161B22" height="38" alt="Projects" /></a>&ensp;<a href="https://example.com/support"><img src="https://img.shields.io/badge/%20-SUPPORT_ME-30363D?style=for-the-badge&logo=bitcoin&logoColor=D0D7DE&labelColor=161B22" height="38" alt="Support with Bitcoin" /></a>&ensp;<a href="https://t.me/your_username"><img src="https://img.shields.io/badge/%20-TELEGRAM-30363D?style=for-the-badge&logo=telegram&logoColor=D0D7DE&labelColor=161B22" height="38" alt="Telegram" /></a>
-</p>
-
-</div>
-
----
-
-<h3 align="center">Stack</h3>
-
-<table align="center">
-  <tr>
-    <td align="center" valign="middle" width="50%"><b>Core</b></td>
-    <td align="center" valign="middle" width="50%"><b>Linux & Tooling</b></td>
-  </tr>
-  <tr>
-    <td align="center" valign="middle">
-      <img src="https://skillicons.dev/icons?i=cpp,java,py,bash,sqlite&theme=dark" alt="C++, Java, Python, Bash and SQLite" />
-    </td>
-    <td align="center" valign="middle">
-      <img src="https://skillicons.dev/icons?i=linux,kali,docker,git&theme=dark" alt="Linux, Kali Linux, Docker and Git" />&ensp;<a href="https://zed.dev/" title="Zed Editor"><img src="https://cdn.simpleicons.org/zedindustries/084CCF" width="48" height="48" alt="Zed Editor" /></a>
-    </td>
-  </tr>
-</table>
-
-<p align="center">
-  <sub>Memory safety · least privilege · local-first software · reproducible builds</sub>
-</p>
