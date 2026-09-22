@@ -1,0 +1,134 @@
+# ───────────────────────────────────────────────────────────────────────────
+#  Profile config  →  python3 build.py  →  README.md, SUPPORT.md, assets/
+#
+#  Edit this file, never the generated ones. Empty values ("") are skipped,
+#  so a half-filled config never publishes placeholder links.
+#  Pixel text supports A–Z 0–9 and basic punctuation (no Cyrillic).
+# ───────────────────────────────────────────────────────────────────────────
+
+[profile]
+login   = "Trendorin"
+name    = "Trendon"
+title   = "TRENDORIN"                                        # pixel wordmark
+tagline = "Linux · Security · System tooling · Open source"  # typed line under it
+since   = "2024"                                             # "EST. 2024" in the header HUD
+
+# GitHub → Settings → Profile → Bio (max 160 chars). Only shown in the local stand.
+bio = "Linux-focused developer · security & system tooling · C++ / Python / Bash · local-first, least privilege, inspectable code"
+
+about = """
+Hi, I'm **Trendon**, a Linux-focused developer working on security, system tooling and open-source software.
+
+I prefer local-first applications, explicit privilege boundaries, predictable behavior
+and code that can be inspected without unnecessary complexity.
+"""
+
+# Portrait for the System block and the dithered avatars (your public avatar, grayscale).
+portrait = "art/portrait.png"
+
+# Which dithered avatar the stand shows (see local/avatar/): bayer-1bit, bayer-1bit-fine,
+# bayer-4gray, floyd-1bit. Upload local/avatar.png in GitHub → Settings → Profile.
+avatar_style = "bayer-4gray"
+
+
+# ── System: neofetch-style readout next to the portrait ─────────────────────
+# Rows are printed in order; long values wrap. Mixed case is fine here.
+[[spec]]
+key   = "Role"
+value = "Security & system tooling"
+
+[[spec]]
+key   = "Langs"
+value = "C++ · Python · Bash"
+
+[[spec]]
+key   = "Data"
+value = "SQLite"
+
+[[spec]]
+key  = "Kernel"
+live = "arch-kernel"   # newest core/linux on Arch (e.g. Linux 7.2.6-arch2-1), refreshed on GitHub
+
+[[spec]]
+key   = "Tools"
+value = "Docker · Git"
+
+[[spec]]
+key   = "Focus"
+value = "Least privilege · local-first · memory safety · reproducible builds"
+
+[[spec]]
+key   = "Uptime"
+value = "since 2024"
+
+
+# ── Featured projects (hidden while empty) ──────────────────────────────────
+# [[projects]]
+# name        = "project-name"
+# url         = "https://github.com/Trendorin/project-name"
+# description = "One line: what it does and for whom"
+
+
+# ── Contact cards. The GitHub card is always shown ──────────────────────────
+[links]
+telegram = ""   # https://t.me/<username>
+email    = ""   # you@example.com  (public: expect some spam)
+website  = ""   # https://…
+pgp      = ""   # https://github.com/Trendorin.gpg once a GPG key is added to GitHub
+
+
+# ── Support / donations ─────────────────────────────────────────────────────
+[support]
+# Short line in the README above the support buttons.
+intro = "Everything here is free and open source. If it saves you time, you can support the work: it buys time for new tools, fixes and docs."
+
+# GitHub Sponsors does not pay out to residents of Russia or Belarus (checked 2026-09).
+# Set to true only if you live in a supported region and the profile is approved.
+github_sponsors = false
+
+# Platforms, in order. The first one with a URL gets the highlighted card.
+# Add more [[support.links]] blocks the same way if you ever need them.
+# logo: boosty, card, heart, github, telegram, tether, bitcoin, monero, ton, mail, globe, key
+# caption: short line on the card (about 24 chars); note: longer text for SUPPORT.md
+[[support.links]]
+label   = "Boosty"
+logo    = "boosty"
+url     = ""        # https://boosty.to/<name>
+caption = "RU + foreign cards"
+note    = "Russian and foreign cards, one-off or monthly"
+
+# Crypto: fill only addresses from a non-custodial wallet you control
+# (Keeper, formerly Tonkeeper, for TON/TRON/BTC; Feather or Cake for XMR).
+# Not Telegram Wallet: it is custodial and freezes accounts. QR codes come from qrencode.
+[[support.crypto]]
+coin    = "USDT"
+network = "TRON (TRC-20), not Ethereum or TON"
+address = ""
+
+[[support.crypto]]
+coin    = "TON"
+network = "The Open Network (coin renamed GRAM in 2026, same address)"
+address = ""
+
+[[support.crypto]]
+coin    = "BTC"
+network = "Bitcoin (on-chain)"
+address = ""
+
+[[support.crypto]]
+coin    = "XMR"
+network = "Monero"
+address = ""
+
+
+# ── Extras ──────────────────────────────────────────────────────────────────
+[extras]
+# Grayscale contribution snake. Adds .github/workflows/snake.yml; looks best
+# once the contribution graph has some activity.
+snake = false
+
+# How often GitHub checks for a new Arch kernel (cron, UTC). One ~10 s run and one
+# tiny JSON request; a commit happens only when the version actually changed.
+#   "17 4 * * *"  once a day at 04:17 UTC (default)
+#   "17 4 * * 1"  once a week, Mondays
+live_cron = "17 4 * * *"
