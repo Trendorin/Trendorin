@@ -62,6 +62,11 @@ key   = "Uptime"
 value = "since 2024"
 
 
+# ── Featured projects (hidden while empty) ──────────────────────────────────
+# [[projects]]
+# name        = "project-name"
+# url         = "https://github.com/Trendorin/project-name"
+# description = "One line: what it does and for whom"
 [[projects]]
 name        = "luci-theme-pixel"
 url         = "https://github.com/Trendorin/luci-theme-pixel"

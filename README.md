@@ -15,6 +15,10 @@ and code that can be inspected without unnecessary complexity.
 
 <picture><source media="(prefers-color-scheme: dark)" srcset="assets/portrait-dark.svg"><img src="assets/portrait-light.svg" alt="Dithered portrait"></picture> <picture><source media="(prefers-color-scheme: dark)" srcset="assets/spec-dark.svg"><img src="assets/spec-light.svg" alt="trendorin@github: Role: Security &amp; system tooling; Langs: C++ · Python · Bash; Data: SQLite; Kernel: Linux 7.2.6-arch2-1; Tools: Docker · Git; Focus: Least privilege · local-first · memory safety · reproducible builds; Uptime: since 2024"></picture>
 
+<picture><source media="(prefers-color-scheme: dark)" srcset="assets/label-projects-dark.svg"><img src="assets/label-projects-light.svg" alt="Projects"></picture>
+
+<a href="https://github.com/Trendorin/luci-theme-pixel"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/project-luci-theme-pixel-dark.svg"><img src="assets/project-luci-theme-pixel-light.svg" alt="luci-theme-pixel: Pixel OpenWrt theme"></picture></a>
+
 <picture><source media="(prefers-color-scheme: dark)" srcset="assets/label-contact-dark.svg"><img src="assets/label-contact-light.svg" alt="Contact"></picture>
 
 <a href="https://github.com/Trendorin?tab=repositories"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/link-github-dark.svg"><img src="assets/link-github-light.svg" alt="GITHUB: github.com/Trendorin"></picture></a>
