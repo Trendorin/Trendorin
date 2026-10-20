@@ -34,7 +34,7 @@ def main() -> None:
     out = f"""{MARK}
 
 <table><tr>
-<td valign="top" width="340"><img src="assets/poster.png" width="320" alt="A mountain lake at dawn"></td>
+<td valign="top" width="400"><img src="assets/poster.png" width="384" alt="A moonlit meadow with fireflies"></td>
 <td valign="top">
 
 <h3>Hi, I'm {p["name"]}</h3>
