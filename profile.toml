@@ -1,67 +1,44 @@
-# Edit this file, then run:  python3 build.py
-# build.py writes README.md and the images in assets/ (needs fonttools, uharfbuzz, rsvg-convert).
+# Edit this file, then run:  python3 build.py   (standard library only)
+# build.py writes README.md. The picture comes from poster.py: python3 poster.py assets/poster.svg
 
 [profile]
-login   = "Trendorin"
-name    = "Trendon"
-about   = """
+login = "Trendorin"
+name  = "Trendon"
+about = """
 I write software for Linux, mostly around security and system tooling. I like programs that run
 locally, ask for no more privileges than they need, and stay small enough to read.
 """
 
-# Stack: one row each. icon is a file in assets/icons/ (NAME.svg, or NAME-Light.svg and NAME-Dark.svg).
+# Stack: "what" and a short note.
 [[stack]]
-name = "C++"
-note = "desktop apps, system tools"
-icon = "CPP"
+name = "C++ and Qt"
+note = "desktop apps and system tools"
 
 [[stack]]
 name = "Rust"
-note = "daemons, CLIs"
-icon = "Rust"
+note = "daemons and command-line tools"
 
 [[stack]]
-name = "Python"
-note = "tooling, automation"
-icon = "Python"
-
-[[stack]]
-name = "Bash"
-note = "installers, glue"
-icon = "Bash"
-
-[[stack]]
-name = "Qt"
-note = "native interfaces"
-icon = "QT"
+name = "Python and Bash"
+note = "tooling, installers, automation"
 
 [[stack]]
 name = "Linux"
-note = "daily driver, Arch"
-icon = "Linux"
+note = "Arch as the daily system"
 
-
-# Projects: add a block, run build.py. logo is a file in assets/projects/.
+# Projects: add a block, run build.py.
 [[projects]]
 name = "luci-theme-pixel"
-description = "A monochrome pixel theme for the OpenWrt web interface"
-tags = ["OpenWrt", "LuCI", "CSS"]
-logo = "luci-theme-pixel.svg"
+description = "a monochrome pixel theme for the OpenWrt web interface"
 
 [[projects]]
 name = "Engram"
-description = "Memory scanner for Linux, Wine and AI agents"
-tags = ["Rust", "Slint", "MCP"]
-logo = "engram.svg"
+description = "memory scanner for Linux, Wine and AI agents"
 
 [[projects]]
 name = "PkgScope"
-description = "See inside Linux packages before you install them"
-tags = ["C++", "Qt 6", "sandbox"]
-logo = "pkgscope.svg"
+description = "see inside Linux packages before you install them"
 
 [[projects]]
 name = "Sotto"
-description = "Voice typing for Linux, local and fast"
-tags = ["C++", "Qt 6", "whisper.cpp"]
-logo = "sotto.svg"
+description = "voice typing for Linux, local and fast"
