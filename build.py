@@ -38,15 +38,18 @@ def unique_ids(inner: str, prefix: str) -> str:
 
 
 def stack_svg(rows: list[dict], t) -> str:
-    row_h, size = 46, 32
-    body = []
+    row_h, size, pad = 52, 32, 12
+    h = len(rows) * row_h + 2 * pad
+    body = [f'<rect x=".5" y=".5" width="{CARD_W - 1}" height="{h - 1}" rx="12" fill="{t.card}" stroke="{t.border}"/>']
     for i, r in enumerate(rows):
-        y = i * row_h
+        y = pad + i * row_h
+        if i:
+            body.append(f'<rect x="16" y="{y}" width="{CARD_W - 32}" height="1" fill="{t.border}" opacity=".6"/>')
         vb, inner = read_icon(r["icon"], t.name)
-        body.append(f'<svg x="0" y="{y + 4}" width="{size}" height="{size}" viewBox="{vb}">{unique_ids(inner, f"s{i}{t.name}")}</svg>')
-        body.append(text(r["name"], 48, y + 18, 15, t.title, "semibold"))
-        body.append(text(r["note"], 48, y + 35, 12.5, t.muted))
-    return svg(300, len(rows) * row_h - 6, "".join(body), ", ".join(r["name"] for r in rows))
+        body.append(f'<svg x="18" y="{y + 10}" width="{size}" height="{size}" viewBox="{vb}">{unique_ids(inner, f"s{i}{t.name}")}</svg>')
+        body.append(text(r["name"], 66, y + 31, 15, t.title, "semibold"))
+        body.append(text(r["note"], CARD_W - 18, y + 31, 12.5, t.muted, "regular", "end"))
+    return svg(CARD_W, h, "".join(body), ", ".join(r["name"] for r in rows))
 
 
 def card_svg(p: dict, t) -> str:
@@ -84,13 +87,14 @@ def main() -> None:
         slug = Path(proj["logo"]).stem
         write(ASSETS, f"card-{slug}", {k: card_svg(proj, t) for k, t in TH.items()})
         cards.append(f'<a href="https://github.com/{p["login"]}/{proj["name"]}">'
-                     + picture(f"card-{slug}", proj["name"], ' width="49%"') + "</a>")
-    rows = [" ".join(cards[i:i + 2]) for i in range(0, len(cards), 2)]
-    out = [MARK, "",
-           f'<img src="assets/banner.svg" width="100%" alt="{p["login"]}">', "",
-           f'Hi, I\'m **{p["name"]}**.', "", p["about"].strip(), "",
-           "### Stack", "", picture("stack", "Stack"), "",
-           "### Projects", "", *["\n".join(rows)], "",
+                     + picture(f"card-{slug}", proj["name"]) + "</a>")
+    about = " ".join(p["about"].split())
+    right = [f'<h3>Hi, I\'m {p["name"]}</h3>', f"<p>{about}</p>",
+             "<h3>Stack</h3>", picture("stack", "Stack"),
+             "<h3>Projects</h3>", "<br>\n".join(cards)]
+    out = [MARK, "", '<table><tr>',
+           '<td valign="top" width="340"><img src="assets/room.svg" width="320" alt=""></td>',
+           '<td valign="top">', "", *right, "", "</td>", "</tr></table>", "",
            '<sub>Stack icons from <a href="https://github.com/tandpfun/skill-icons">skill-icons</a> (MIT).</sub>', ""]
     (ROOT / "README.md").write_text("\n".join(out))
     print(f"README.md: {len(cfg['stack'])} stack rows, {len(cards)} projects")
