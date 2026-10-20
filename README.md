@@ -14,9 +14,8 @@ enough to read.
 
 ### Projects
 
-| | |
-|---|---|
-| [luci-theme-pixel](https://github.com/Trendorin/luci-theme-pixel) | a monochrome pixel theme for the OpenWrt web interface |
+<a href="https://github.com/Trendorin/luci-theme-pixel"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/card-luci-theme-pixel-dark.svg"><img src="assets/card-luci-theme-pixel-light.svg" width="49%" alt="luci-theme-pixel"></picture></a> <a href="https://github.com/Trendorin/Engram"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/card-engram-dark.svg"><img src="assets/card-engram-light.svg" width="49%" alt="Engram"></picture></a>
+<a href="https://github.com/Trendorin/PkgScope"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/card-pkgscope-dark.svg"><img src="assets/card-pkgscope-light.svg" width="49%" alt="PkgScope"></picture></a> <a href="https://github.com/Trendorin/Sotto"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/card-sotto-dark.svg"><img src="assets/card-sotto-light.svg" width="49%" alt="Sotto"></picture></a>
 
 ### Contact
 
