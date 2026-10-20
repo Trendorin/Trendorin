@@ -1,5 +1,5 @@
 # Edit this file, then run:  python3 build.py   (standard library only)
-# build.py writes README.md. The picture comes from poster.py: python3 poster.py assets/poster.svg
+# build.py writes README.md. Icons are files in assets/icons/ (NAME.svg, or NAME-Light.svg and NAME-Dark.svg).
 
 [profile]
 login = "Trendorin"
@@ -12,18 +12,22 @@ locally, ask for no more privileges than they need, and stay small enough to rea
 # Stack: "what" and a short note.
 [[stack]]
 name = "C++ and Qt"
+icons = ["CPP", "QT"]
 note = "desktop apps and system tools"
 
 [[stack]]
 name = "Rust"
+icons = ["Rust"]
 note = "daemons and command-line tools"
 
 [[stack]]
 name = "Python and Bash"
+icons = ["Python", "Bash"]
 note = "tooling, installers, automation"
 
 [[stack]]
 name = "Linux"
+icons = ["Linux"]
 note = "Arch as the daily system"
 
 # Projects: add a block, run build.py.
