@@ -1,0 +1,56 @@
+# Edit this file, then run:  python3 build.py   (needs Pillow; fonts: Tiny5 and DotGothic16)
+# build.py writes README.md and the SVGs in assets/gen/. Stack icons are files in assets/icons/
+# (NAME.svg, or NAME-Light.svg and NAME-Dark.svg). The posters are drawn by poster.py.
+
+[profile]
+login = "Trendorin"
+name  = "Trendon"
+# Poster on the left, from assets/posters/:
+#   tsuki 月 winter moon and torii   yu 夕 ukiyo-e sunset   ame 雨 night rain on a bridge   take 竹 bamboo grove
+poster = "tsuki"
+about = """
+I write software for Linux, mostly around security and system tooling. I like programs that run
+locally, ask for no more privileges than they need, and stay small enough to read.
+"""
+
+# Stack: "what" and a short note.
+[[stack]]
+name = "C++ and Qt"
+icons = ["CPP", "QT"]
+note = "desktop apps and system tools"
+
+[[stack]]
+name = "Rust"
+icons = ["Rust"]
+note = "daemons and command-line tools"
+
+[[stack]]
+name = "Python and Bash"
+icons = ["Python", "Bash"]
+note = "tooling, installers, automation"
+
+
+# Projects: listed in order. `repo` is only needed when it differs from `name`.
+[[projects]]
+name = "yami"
+description = "a lightweight pixel-art desktop environment for Linux, built with Rust and Niri"
+
+[[projects]]
+name = "luci-theme-pixel"
+description = "a monochrome pixel theme for the OpenWrt web interface"
+
+[[projects]]
+name = "Engram"
+description = "memory scanner for Linux, Wine and AI agents"
+
+[[projects]]
+name = "Sotto"
+description = "voice typing for Linux, local and fast"
+
+# Contacts: entries with a url become pixel buttons (`icon` is a file in assets/icons/);
+# without a url the text is shown as a copyable line (a wallet address).
+[[contacts]]
+label = "Mail"
+icon  = "Mail"
+text  = "trendorin.marshland458@passinbox.com"
+url   = "mailto:trendorin.marshland458@passinbox.com"
